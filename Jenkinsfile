@@ -1,5 +1,5 @@
 @Library('jenkins-pipeline-shared-lib-sample')_
-tage('Print Build Info') {
+stage('Print Build Info') {
     printBuildinfo {
         name = "Sample Name"
     }
