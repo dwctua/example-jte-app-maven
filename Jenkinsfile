@@ -1,4 +1,6 @@
 @Library('jenkins-pipeline-shared-lib-sample')_
+jte_pipeline()
+/*
 stage('Print Build Info') {
     printBuildinfo {
         name = "Sample Name"
@@ -15,3 +17,4 @@ stage('Print Build Info') {
 } stage('Check Status') {
     checkStatus()
 }
+*/
