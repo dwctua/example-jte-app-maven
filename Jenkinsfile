@@ -5,7 +5,10 @@ stage('Print Build Info') {
     }
 } stage('Disable balancer') {
     disableBalancerUtils()
-} stage('Deploy') {
+} stage('generate') {
+    generate()
+    //build()
+}stage('Deploy') {
     deploy()
 } stage('Enable balancer') {
     enableBalancerUtils()
