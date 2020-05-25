@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="currency-v1">
+    <Basepaths>/currency/v1</Basepaths>
+    <Basepaths>/currency/v1/logs</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1588550276827</CreatedAt>
+    <CreatedBy>dwctua@gmail.com</CreatedBy>
+    <Description>commit 81928f0baa04d5e341efba383a00a1095f6a65b5 from origin/master branch by jenkins</Description>
+    <DisplayName>currency-v1</DisplayName>
+    <LastModifiedAt>1590449013582</LastModifiedAt>
+    <LastModifiedBy>dwctua@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:c7b123383105b4a79b515e1b1dcbf1aacba7ea42548fd93e68a81b7919021b8ba2f35c6e22b2fa8b2cbcd57b2e85a9e02831956a8df0148c0859170a59ad60aa</ManifestVersion>
+    <Policies>
+        <Policy>AssignMessage.CopyRequest</Policy>
+        <Policy>AssignMessage.SetApigee404ErrorVariables</Policy>
+        <Policy>AssignMessage.SetInternalServerErrorVariables</Policy>
+        <Policy>AssignMessage.SetLogglyResponse</Policy>
+        <Policy>AssignMessage.SetResponseContentTypeToJson</Policy>
+        <Policy>AssignMessage.SetTarget404ErrorVariables</Policy>
+        <Policy>AssignMessage.SetTarget4XXErrorVariables</Policy>
+        <Policy>AssignMessage.SetTargetResource</Policy>
+        <Policy>ExtractVariables.GetTargetErrorMessage</Policy>
+        <Policy>JavaScript.ConfigureTargetRequest</Policy>
+        <Policy>JavaScript.LogToLoggly</Policy>
+        <Policy>RaiseFault.GoToFaultRules</Policy>
+        <Policy>RaiseFault.Json</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+        <ProxyEndpoint>loggly</ProxyEndpoint>
+        <ProxyEndpoint>test</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://ConfigureTargetRequest.js</Resource>
+        <Resource>jsc://LogToLoggly.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

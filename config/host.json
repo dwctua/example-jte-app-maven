@@ -1,1 +1,14 @@
-{"test": ["abc.com","cnn.com"]}
+[
+    {
+        "test": [
+            "abc.com",
+            "cnn.com"
+        ]
+    },
+    {
+        "int": [
+            "abc.com",
+            "cnn.com"
+        ]
+    }
+]
